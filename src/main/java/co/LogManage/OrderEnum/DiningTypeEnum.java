@@ -5,18 +5,18 @@ import lombok.Getter;
 import java.util.Arrays;
 
 @Getter
-public enum DiningType {
+public enum DiningTypeEnum {
     DINING_TYPE_COMPANY("기업중식"),
     DINING_TYPE_APARTMENT("아파트조식");
 
     private String krName;
 
-    DiningType(String krName) {
+    DiningTypeEnum(String krName) {
         this.krName = krName;
     }
 
-    public static DiningType ofString(String diningType) {
-        return Arrays.stream(DiningType.values())
+    public static DiningTypeEnum ofString(String diningType) {
+        return Arrays.stream(DiningTypeEnum.values())
                 .filter( v -> v.getKrName().equals(diningType))
                 .findAny()
                 .orElse(null);

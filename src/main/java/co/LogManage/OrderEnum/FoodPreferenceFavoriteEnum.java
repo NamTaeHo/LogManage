@@ -5,18 +5,18 @@ import lombok.Getter;
 import java.util.Arrays;
 
 @Getter
-public enum FoodPreferenceFavoriteType {
+public enum FoodPreferenceFavoriteEnum {
     FOOD_PREFERENCE_FAVORITE_EXIST("있어"),
     FOOD_PREFERENCE_FAVORITE_NONE("없어");
 
     private String krName;
 
-    FoodPreferenceFavoriteType(String krName) {
+    FoodPreferenceFavoriteEnum(String krName) {
         this.krName = krName;
     }
 
-    public static FoodPreferenceFavoriteType ofString(String foodPreferenceFavoriteType) {
-        return Arrays.stream(FoodPreferenceFavoriteType.values())
+    public static FoodPreferenceFavoriteEnum ofString(String foodPreferenceFavoriteType) {
+        return Arrays.stream(FoodPreferenceFavoriteEnum.values())
                 .filter( v -> v.getKrName().equals(foodPreferenceFavoriteType))
                 .findAny()
                 .orElse(null);

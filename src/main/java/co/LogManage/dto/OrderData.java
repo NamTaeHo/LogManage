@@ -10,14 +10,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFCell;
 
-import java.util.Scanner;
-
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-import org.apache.poi.xssf.streaming.SXSSFSheet;
-
-import javax.swing.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -42,7 +35,7 @@ public class OrderData implements Log {
 
     @Schema
     @NotBlank
-    private DiningType Dining;
+    private DiningTypeEnum DiningType;
 
     @Schema
     @NotBlank
@@ -69,27 +62,43 @@ public class OrderData implements Log {
     private String SpotName;
 
     @Schema
-    private SexType Sex;
+    private SexEnum Sex;
 
     @Schema
-    private BornPlaceType BornPlace;
+    private BornPlaceEnum BornPlace;
 
     @Schema
     private Integer BirthDate;
 
     @Schema
-    private NightEatPerWeekType NightEatPerWeek;
+    private NightEatPerWeekEnum NightEatPerWeek;
 
     @Schema
-    private WorkOutPerWeekType WorkOutPerWeek;
+    private WorkOutPerWeekEnum WorkOutPerWeek;
 
     @Schema
-    private DrinkPerWeekType DrinkPerWeek;
-
-
+    private DrinkPerWeekEnum DrinkPerWeek;
 
     @Schema
-    private String[] Preference = new String[10];
+    private FoodPreferenceCountryEnum FoodPreferenceCountry;
+
+    @Schema
+    private FoodPreferenceRainEnum FoodPreferenceRain;
+
+    @Schema
+    private FoodPreferenceWinterEnum FoodPreferenceWinter;
+
+    @Schema
+    private FoodPreferenceFriendEnum FoodPreferenceFriend;
+
+    @Schema
+    private FoodPreferenceFavoriteEnum FoodPreferenceFavorite;
+
+    @Schema
+    private FoodPreferenceRestaurantEnum FoodPreferenceRestaurant;
+
+    @Schema
+    private FoodPreferenceQuantityQualityEnum FoodPreferenceQuantityQuality;
 
     @Schema
     @NotBlank
@@ -133,7 +142,7 @@ public class OrderData implements Log {
                 OrderDate = Cell.getDateCellValue();
             } else if (j <= 3) {
                 Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
-                Dining = DiningType.ofString(Cell.getStringCellValue());
+                DiningType = DiningTypeEnum.ofString(Cell.getStringCellValue());
             } else if (j <= 4) {
                 UserId = (int) Cell.getNumericCellValue();
             } else if (j <= 5) {
@@ -151,15 +160,42 @@ public class OrderData implements Log {
                 SpotName = Cell.getStringCellValue();
             } else if (j <= 10) {
                 Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
-                Sex = SexType.ofString(Cell.getStringCellValue());
+                Sex = SexEnum.ofString(Cell.getStringCellValue());
             } else if (j <= 11) {
                 Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
-                BornPlace = BornPlaceType.ofString(Cell.getStringCellValue());
+                BornPlace = BornPlaceEnum.ofString(Cell.getStringCellValue());
             } else if (j <= 12) {
                 BirthDate = (int) Cell.getNumericCellValue();
+            } else if (j <= 13) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                NightEatPerWeek = NightEatPerWeekEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 14) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                WorkOutPerWeek = WorkOutPerWeekEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 15) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                DrinkPerWeek = DrinkPerWeekEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 16) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceCountry = FoodPreferenceCountryEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 17) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceRain = FoodPreferenceRainEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 18) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceWinter = FoodPreferenceWinterEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 19) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceFriend = FoodPreferenceFriendEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 20) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceFavorite = FoodPreferenceFavoriteEnum.ofString(Cell.getStringCellValue());
+            } else if (j <= 21) {
+                Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
+                FoodPreferenceRestaurant = FoodPreferenceRestaurantEnum.ofString(Cell.getStringCellValue());
             } else if (j <= 22) {
                 Sheet.getRow(i).getCell(j).setCellType(CellType.STRING);
-                Preference[j - 13] = Cell.getStringCellValue();
+                FoodPreferenceQuantityQuality = FoodPreferenceQuantityQualityEnum.ofString(Cell.getStringCellValue());
             } else if (j <= 23) {
                 FoodId = (int) Cell.getNumericCellValue();
             } else if (j <= 24) {

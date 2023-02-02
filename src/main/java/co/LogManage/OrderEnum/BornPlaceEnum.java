@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.Arrays;
 
 @Getter
-public enum BornPlaceType {
+public enum BornPlaceEnum {
     BORN_PLACE_TYPE_SEOUL("서울"),
     BORN_PLACE_TYPE_INCHEON("인천"),
     BORN_PLACE_TYPE_DAEJEON("대전"),
@@ -28,12 +28,12 @@ public enum BornPlaceType {
 
     private String krName;
 
-    BornPlaceType(String krName) {
+    BornPlaceEnum(String krName) {
         this.krName = krName;
     }
 
-    public static BornPlaceType ofString(String bornPlaceType) {
-        return Arrays.stream(BornPlaceType.values())
+    public static BornPlaceEnum ofString(String bornPlaceType) {
+        return Arrays.stream(BornPlaceEnum.values())
                 .filter( v -> v.getKrName().equals(bornPlaceType))
                 .findAny()
                 .orElse(null);

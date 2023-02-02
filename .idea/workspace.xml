@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07582b36-dfce-4dc7-835f-62d6f226667e" name="Changes" comment="upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/BornPlaceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DiningType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DrinkPerWeekType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceCountryType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFavoriteType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFriendType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceQuantityQualityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRestaurantType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceWinterType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/NightEatPerWeekType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/SexType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/WorkOutPerWeekType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/UserOrderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/UserOrderDataList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/FoodTagEnum/FoodTagType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/BornPlaceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/BornPlaceEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DiningType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DiningTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DrinkPerWeekType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/DrinkPerWeekEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceCountryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceCountryEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFavoriteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFavoriteEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFriendType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceFriendEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceQuantityQualityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceQuantityQualityEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRainType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRainEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRestaurantType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceRestaurantEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceWinterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/FoodPreferenceWinterEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/NightEatPerWeekType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/NightEatPerWeekEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/SexType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/SexEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/WorkOutPerWeekType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/OrderEnum/WorkOutPerWeekEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/OrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/OrderData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/OrderDataList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/OrderDataList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/UserOrderDataList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/dto/UserOrderDataList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/LogManage/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/LogManage/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +77,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="90e5ad65-008f-436e-837e-4511604638b6" />
+        <option name="url" value="https://github.com/NamTaeHo/LogManage.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -107,6 +116,11 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "spring.configuration.checksum": "d04e2f3af1340a1a10c60646dfac8602",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -129,7 +143,8 @@
       <workItem from="1675221824776" duration="22831000" />
       <workItem from="1675257124931" duration="319000" />
       <workItem from="1675257468748" duration="3227000" />
-      <workItem from="1675260714040" duration="17836000" />
+      <workItem from="1675260714040" duration="18065000" />
+      <workItem from="1675313751969" duration="9200000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1675222492815</created>
@@ -145,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675253216669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upload">
+      <created>1675313303655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675313303655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,21 +191,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/co/LogManage/main/Main.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/co/LogManage/main/Main.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/co/LogManage/dto/OrderData.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalStateException" package="java.lang" />
           <option name="timeStamp" value="8" />

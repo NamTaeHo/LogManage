@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.util.Arrays;
 
 @Getter
-public enum FoodPreferenceRainType {
+public enum FoodPreferenceRainEnum {
     FOOD_PREFERENCE_RAIN_PUB("술집"),
     FOOD_PREFERENCE_RAIN_GUKBAB("국밥집"),
     FOOD_PREFERENCE_RAIN_RESTAURANT("레스토랑"),
@@ -13,12 +13,12 @@ public enum FoodPreferenceRainType {
 
     private String krName;
 
-    FoodPreferenceRainType(String krName) {
+    FoodPreferenceRainEnum(String krName) {
         this.krName = krName;
     }
 
-    public static FoodPreferenceRainType ofString(String foodPreferenceRainType) {
-        return Arrays.stream(FoodPreferenceRainType.values())
+    public static FoodPreferenceRainEnum ofString(String foodPreferenceRainType) {
+        return Arrays.stream(FoodPreferenceRainEnum.values())
                 .filter( v -> v.getKrName().equals(foodPreferenceRainType))
                 .findAny()
                 .orElse(null);

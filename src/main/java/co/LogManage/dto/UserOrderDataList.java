@@ -1,7 +1,7 @@
 package co.LogManage.dto;
 
 
-import co.LogManage.OrderEnum.SexType;
+import co.LogManage.OrderEnum.SexEnum;
 
 public class UserOrderDataList {
 
@@ -9,7 +9,7 @@ public class UserOrderDataList {
 
     private String UserName;
 
-    private SexType type ;
+    private SexEnum type ;
 
 
 
